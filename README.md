@@ -14,3 +14,5 @@ rolyz
 
 ## Proje Ekibi
 Abdullah Fatih HÖCÜ
+
+ [Proje Planı](https://github.com/hocuf/anapredai/blob/main/Proje%20Plan%C4%B1.md)
