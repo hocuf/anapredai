@@ -16,3 +16,4 @@ rolyz
 Abdullah Fatih HÖCÜ
 
  [Proje Planı](https://github.com/hocuf/anapredai/blob/main/Proje%20Plan%C4%B1.md)
+ [Gereksininim Analizi](https://github.com/hocuf/anapredai/blob/main/Gereksinim%20Analizi.md)
