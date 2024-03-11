@@ -71,7 +71,4 @@ Bu gereksinim analizi, AnapredAI projesinin kapsamlı bir özeti olarak hazırla
 ### DEP2: Harici Kütüphaneler
 - Analiz ve görselleştirme için gerekli Python ve JavaScript kütüphaneleri.
 
-## Gözden Geçirme ve Onay
-
-Bu gereksinim analizi, projenin geliştirilmesi aşamasına geçmeden önce gözden geçirilecek ve onaylanacaktır.
 
