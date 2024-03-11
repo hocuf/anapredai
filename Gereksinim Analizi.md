@@ -1,74 +1,19 @@
 # Gereksinim Analizi
 
-Proje Adı: **anapredai**
-
-## Giriş
-Bu gereksinim analizi, AnapredAI projesinin kapsamlı bir özeti olarak hazırlanmıştır ve projenin temel fonksiyonlarını, kullanım senaryolarını ve performans kriterlerini detaylandırmaktadır.
-
-## Fonksiyonel Gereksinimler
-
-### FR1: Veri Yükleme
-- Kullanıcıların CSV veya Excel formatındaki veri setlerini yükleyebilmelerini sağlamak.
-- Yüklenen verilerin sistem tarafından doğru bir şekilde işlenmesini garantilemek.
-
-### FR2: Veri Temizleme
-- Boş veya eksik verileri tespit edebilme ve bunları düzeltme veya kaldırma seçenekleri sunmak.
-- Yanlış formatlanmış veri girişlerini düzeltebilme yeteneği.
-
-### FR3: Veri Görselleştirme
-- Çeşitli veri görselleştirme seçenekleri (örn. histogramlar, pasta grafikleri, zaman serisi grafikleri) sunmak.
-- Kullanıcıların interaktif şekilde görselleştirmeler oluşturabilmeleri için araçlar sağlamak.
-
-### FR4: Analitik Modeller
-- Kullanıcıların seçebileceği çeşitli istatistiksel ve makine öğrenimi modellerini entegre etmek.
-- Model seçimi ve parametre ayarları için kullanıcı dostu bir arayüz sağlamak.
-
-### FR5: Tahmin Oluşturma
-- Seçilen model temelinde veri seti için tahminler üretebilmek.
-- Tahmin sonuçlarını anlaşılır ve kullanışlı bir formatta sunmak.
-
-### FR6: Kullanıcı Hesap Yönetimi
-- Kullanıcıların kendi hesaplarını oluşturabilmeleri, oturum açabilmeleri ve hesap bilgilerini yönetebilmeleri.
-- Güvenlik standartlarına uygun kimlik doğrulama ve veri koruması.
-
-## Fonksiyonel Olmayan Gereksinimler
-
-### NFR1: Kullanılabilirlik
-- Kullanıcıların sistemi minimum eğitimle kullanabilmesi.
-- Intuitif ve temiz bir kullanıcı arayüzü tasarımı.
-
-### NFR2: Performans
-- Büyük veri setleri üzerinde hızlı işlem yapabilme kabiliyeti.
-- Anlık kullanıcı etkileşimlerine 2 saniye içinde yanıt verebilme.
-
-### NFR3: Güvenlik
-- Tüm kullanıcı verilerinin güvenli bir şekilde saklanması.
-- Veri aktarımında end-to-end şifreleme kullanımı.
-
-### NFR4: Ölçeklenebilirlik
-- Artan kullanıcı ve veri yükünü destekleyebilecek bir sistem altyapısı.
-- Bulut hizmetleri ile entegrasyon.
-
-### NFR5: Uyumluluk
-- Farklı tarayıcılar ve cihazlar arasında tutarlı bir kullanıcı deneyimi sunmak.
-
-## Kısıtlamalar
-
-### CON1: Teknoloji Stack'ı
-- Proje, Flask (Python), JavaScript, HTML ve CSS kullanılarak geliştirilecektir.
-
-### CON2: Bütçe
-- Bütçe kısıtlamaları nedeniyle, açık kaynaklı araçlar ve kütüphaneler tercih edilecektir.
-
-### CON3: Teslim Tarihi
-- Prototipin ilk sürümü YYYY-MM-DD tarihine kadar tamamlanmalı ve sunulmalıdır.
-
-## Bağımlılıklar
-
-### DEP1: Veri Setleri
-- Modelin eğitimi ve testi için güvenilir veri setlerine erişim.
-
-### DEP2: Harici Kütüphaneler
-- Analiz ve görselleştirme için gerekli Python ve JavaScript kütüphaneleri.
-
-
+1- Kullanıcıların sisteme **giriş yapabilmeleri** ve oturum açabilmeleri için bir mekanizma.
+2- Yeni kullanıcıların **kaydolabilmeleri** ve kişisel hesap oluşturabilmeleri.
+3- Kullanıcıların veri setlerini **yükleyebilmeleri**, desteklenen formatlar arasında CSV, Excel ve JSON dahil.
+4- Yüklenen veri üzerinde **temel veri temizleme** işlemleri gerçekleştirme, boş değerlerin ve çoğaltılmış kayıtların temizlenmesi.
+5- Veriler üzerinde **filtreleme** yapabilme yeteneği, belirli sütunları veya satırları seçebilme ve belli koşullara göre veri setlerini sınırlayabilme.
+6- Veri setleri için **görselleştirme** seçenekleri oluşturabilme, bar grafikleri, çizgi grafikleri, pasta grafikleri ve dağılım grafikleri gibi.
+7- **İstatistiksel analiz** yetenekleri, ortalama, medyan, mod, standart sapma ve korelasyon hesapları gibi.
+8- Gelişmiş **veri analizi** fonksiyonları, regresyon analizi, sınıflandırma ve kümeleme işlemleri gerçekleştirebilme.
+9- Makine öğrenimi modellerini **eğitebilme** ve bu modeller üzerinden **tahminler yapabilme** yetenekleri.
+10- Oluşturulan görselleştirmeleri ve analiz sonuçlarını **dışa aktarabilme**, PNG, PDF ya da CSV formatlarında indirebilme.
+11- Kullanıcıların **analiz geçmişini görüntüleyebilmeleri**, daha önce yaptıkları analizlerin kaydedilmesi ve gerektiğinde erişilebilir olması.
+12- Güvenli bir şekilde **oturumu kapatma** özelliği ve kullanıcıların çıkış yapabilmeleri.
+13- Kullanıcıların ve sistem yöneticilerinin **hata raporları gönderebilmeleri** ve geri bildirimde bulunabilmeleri.
+14- Sistemdeki verilerin düzenli olarak **yedeklenmesi**, veri kaybını önlemek için otomatik yedekleme işlemleri.
+15- Kullanıcıların sisteme yükledikleri veri setleri için **özel izinler ayarlayabilmeleri**, veri paylaşımı ve erişim kontrolü.
+16- **Mobil ve masaüstü cihazlar arasında uyumluluk**, farklı ekran boyutları ve işletim sistemleri için duyarlı tasarım.
+17- Kullanıcıların ve geliştiricilerin projeyi en iyi şekilde kullanabilmeleri için **kapsamlı dokümantasyon** ve kullanım kılavuzları.
